@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <com.example.drawapp.MainActivity$DrawView
+        android:id="@+id/drawView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="space_evenly"
+        android:padding="10dp">
+
+        <Button android:id="@+id/btnLine" android:text="LINE"/>
+        <Button android:id="@+id/btnCircle" android:text="CIRCLE"/>
+        <Button android:id="@+id/btnRect" android:text="RECT"/>
+        <Button android:id="@+id/btnSquare" android:text="SQUARE"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="MANAN"
+        android:textColor="#00FFFF"
+        android:background="#222222"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>
